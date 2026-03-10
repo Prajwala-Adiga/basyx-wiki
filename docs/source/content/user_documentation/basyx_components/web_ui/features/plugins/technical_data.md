@@ -9,6 +9,7 @@
 This plugin is activated when a Submodel has the following semantic ID:
 
 - **V1.2**: `https://admin-shell.io/ZVEI/TechnicalData/Submodel/1/2`
+- **V2.0**: `0173-1#01-AHX837#002`
 
 ## Feature Overview
 
@@ -153,3 +154,4 @@ This semantic information is displayed in both the table view and expansion pane
 ## References
 
 - [IDTA Technical Data V1.2 Specification](https://industrialdigitaltwin.org/wp-content/uploads/2022/10/IDTA-02003-1-2_Submodel_TechnicalData.pdf)
+- [IDTA Technical Data V2.0 Specification](https://industrialdigitaltwin.org/wp-content/uploads/2025/03/IDTA-02003_Generic-Frame-for-Technical-Data.pdf)

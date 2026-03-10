@@ -9,6 +9,7 @@
 This plugin is activated when a Submodel has the following semantic ID:
 
 - **V1.2**: `0173-1#01-AHF578#001`
+- **V2.0**: `0173-1#01-AHF578#003`
 
 ## Feature Overview
 
@@ -111,3 +112,4 @@ The plugin automatically organizes documents into these categories based on thei
 ## References
 
 - [IDTA Handover Documentation V1.2 Specification](https://industrialdigitaltwin.org/wp-content/uploads/2023/03/IDTA-02004-1-2_Submodel_Handover-Documentation.pdf)
+- [IDTA Handover Documentation V2.0 Specification](https://industrialdigitaltwin.org/wp-content/uploads/2025/07/IDTA-02004-2-0_Submodel_Handover-Documentation.pdf)
