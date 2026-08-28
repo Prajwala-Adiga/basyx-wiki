@@ -58,7 +58,7 @@ For identifier fields such as the **AAS ID** and **Global Asset ID**, the wizard
 
 After entering the required asset information, select **Next** to continue.
 
-![AAS Creation Wizard - Asset Information](./images/modules/aas-wizard/aas_creation_wizard_asset_info.png)
+![AAS Creation Wizard - Asset Information](../images/modules/aas-wizard/aas_creation_wizard_asset_info.png)
 
 ---
 
@@ -85,7 +85,7 @@ Several textual properties support **multilingual values**. Additional translati
 
 After completing the relevant fields, select **Next**.
 
-![AAS Creation Wizard - Digital Nameplate](./images/modules/aas-wizard/aas_creation_wizard_digital_nameplate.png)
+![AAS Creation Wizard - Digital Nameplate](../images/modules/aas-wizard/aas_creation_wizard_digital_nameplate.png)
 
 ---
 
@@ -111,7 +111,7 @@ This makes it possible to represent larger and more complex technical-data struc
 
 Items in repeating sections can be created using **Add New**.
 
-![AAS Creation Wizard - Technical Data](./images/modules/aas-wizard/aas_creation_wizard_tecnical_data.png)
+![AAS Creation Wizard - Technical Data](../images/modules/aas-wizard/aas_creation_wizard_tecnical_data.png)
 
 ---
 
@@ -134,7 +134,7 @@ Collections that can occur multiple times can be extended using **Add New**.
 
 For example, multiple documents, document IDs, or document classifications can be represented within the same Submodel.
 
-![AAS Creation Wizard - Handover Documentation](./images/modules/aas-wizard/aas_creation_wizard_handover_documentation.png)
+![AAS Creation Wizard - Handover Documentation](../images/modules/aas-wizard/aas_creation_wizard_handover_documentation.png)
 
 ---
 
@@ -215,7 +215,7 @@ The created Submodels follow the structures of the corresponding IDTA Submodel T
 
 The AAS Creation Wizard therefore provides a simplified workflow for creating a standardized initial digital representation of an asset without requiring users to manually construct the complete AAS and Submodel structures.
 
-![AAS Creation Wizard - Access the AAS](./images/modules/aas-wizard/aas_creation_wizard_AAS_redirect.png)
+![AAS Creation Wizard - Access the AAS](../images/modules/aas-wizard/aas_creation_wizard_AAS_redirect.png)
 
 ---
 
