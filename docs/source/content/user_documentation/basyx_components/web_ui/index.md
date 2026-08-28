@@ -24,6 +24,7 @@ name: web_ui
 * [Supply Chain Security](./features/supply_chain_security.md)
 * [Corporate Design](./features/corporate_design.md)
 * [Mobile Support](./features/mobile_support.md)
+* [Modules](./features/modules.md)
 * [Plugins](./features/plugin_mechanism.md)
 * [AAS Editor](./features/aas_editor.md)
 * [AAS Routing](./features/routing.md)

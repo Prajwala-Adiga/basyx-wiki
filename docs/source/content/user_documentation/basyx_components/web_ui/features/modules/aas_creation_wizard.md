@@ -35,8 +35,6 @@ To open it:
 
 The wizard opens with the first step, **Asset Information**.
 
-<!-- Add screenshot of the AAS Creation Wizard - Asset Information here -->
-
 ---
 
 ## Step 1 – Asset Information
