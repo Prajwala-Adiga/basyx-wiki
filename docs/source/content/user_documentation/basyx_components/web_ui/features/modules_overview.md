@@ -30,7 +30,24 @@ This provides two main advantages:
 ```
 
 ---
+## Modules and Plugins
 
+Modules and plugins both extend the functionality of the BaSyx AAS Web UI, but they serve different purposes.
+
+| | Modules | Plugins |
+| --- | --- | --- |
+| **Purpose** | Provide complete application-level tools and workflows | Provide specialized visualization or interaction for AAS data |
+| **Scope** | Can work across multiple Submodels, AASs, or services | Usually focused on a particular Submodel or SubmodelElement |
+| **Access** | Opened from the **Modules** section of the main navigation | Displayed within the visualization of a Submodel or SubmodelElement |
+| **Context** | Can provide independent workflows, forms, dashboards, and navigation | Typically selected automatically based on the Semantic ID of AAS data |
+| **Examples** | AAS Creation Wizard, AAS Importer, Company Data Portal | Digital Nameplate, Time Series Data, Technical Data |
+
+In general:
+
+- Use a **plugin** when specialized visualization or interaction is required for a particular Submodel or SubmodelElement.
+- Use a **module** when the functionality represents a larger workflow, application, dashboard, or domain-specific use case.
+
+---
 ## Accessing Modules
 
 Modules can be accessed through the main navigation menu of the BaSyx AAS Web UI.
@@ -195,41 +212,6 @@ The module can be used to test and interact with the available AAS query functio
 ```{note}
 The available API components and supported queries depend on the configured AAS infrastructure.
 ```
----
-
-## Modules and Plugins
-
-Modules and plugins both extend the functionality of the BaSyx AAS Web UI, but they serve different purposes.
-
-| | Modules | Plugins |
-| --- | --- | --- |
-| **Purpose** | Provide complete application-level tools and workflows | Provide specialized visualization or interaction for AAS data |
-| **Scope** | Can work across multiple Submodels, AASs, or services | Usually focused on a particular Submodel or SubmodelElement |
-| **Access** | Opened from the **Modules** section of the main navigation | Displayed within the visualization of a Submodel or SubmodelElement |
-| **Context** | Can provide independent workflows, forms, dashboards, and navigation | Typically selected automatically based on the Semantic ID of AAS data |
-| **Examples** | AAS Creation Wizard, AAS Importer, Company Data Portal | Digital Nameplate, Time Series Data, Technical Data |
-
-In general:
-
-- Use a **plugin** when specialized visualization or interaction is required for a particular Submodel or SubmodelElement.
-- Use a **module** when the functionality represents a larger workflow, application, dashboard, or domain-specific use case.
-
----
-
-## Module Availability
-
-Modules can define requirements that determine whether they are available in the current Web UI context.
-
-For example, a module may require:
-
-- A particular infrastructure configuration
-- Certain backend services to be available
-- A currently selected AAS or Submodel
-- Authentication
-- A desktop or mobile environment
-
-As a result, the list shown under **Modules** can vary between different deployments or while navigating through the Web UI.
-
 ---
 
 ## Developing Custom Modules
