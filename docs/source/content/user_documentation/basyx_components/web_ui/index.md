@@ -41,6 +41,7 @@ features/security
 features/supply_chain_security
 features/corporate_design
 features/mobile_support
+features/modules_overview
 features/plugin_mechanism
 features/aas_editor
 features/routing
