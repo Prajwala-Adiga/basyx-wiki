@@ -222,11 +222,9 @@ Custom modules can provide their own application views, workflows, navigation, a
 
 For information about implementing a custom module, see the [Developing Custom Modules](../../../../developer_documentation/basyx_web_ui/developing_custom_modules.md) documentation.
 
----
-
-Detailed user documentation is available for selected modules:
 
 ```{toctree}
+:hidden:
 :maxdepth: 1
 
 modules/aas_creation_wizard
