@@ -10,14 +10,6 @@ Modules extend the BaSyx AAS Web UI with **application-level functionality for s
 
 A module can provide its own pages, forms, dashboards, navigation, and business logic while still being integrated into the common BaSyx AAS Web UI.
 
-Typical use cases for modules include:
-
-- Importing or transferring Asset Administration Shells
-- Creating Asset Administration Shells and Submodels
-- Working with information from multiple Submodels
-- Providing guided workflows and forms
-- Providing domain-specific dashboards or applications
-
 Modules are particularly suited for functionality that goes beyond the visualization or interaction with a single Submodel or SubmodelElement.
 
 ```{hint}
@@ -77,142 +69,49 @@ Therefore, not every module is necessarily visible in every BaSyx AAS Web UI set
 ---
 
 ## Available Modules
-
-The BaSyx AAS Web UI can contain different modules depending on the configured environment.
-
 The following modules are currently available or included in selected BaSyx AAS Web UI configurations.
 
-### AAS Creation Wizard
+**[AAS Creation Wizard](modules/aas_creation_wizard.md)**
 
-The **AAS Creation Wizard** provides a guided workflow for creating an Asset Administration Shell together with associated standardized Submodels.
+- Provides a guided workflow for creating an Asset Administration Shell and associated Submodels
+- Currently supports Digital Nameplate, Technical Data, and Handover Documentation
+- Uses forms based on the corresponding IDTA Submodel Templates
 
-The wizard currently guides the user through four steps:
+**[AAS Importer](modules/aas_importer.md)**
 
-1. Asset Information
-2. Digital Nameplate
-3. Technical Data
-4. Handover Documentation
+- Transfers an Asset Administration Shell from a source infrastructure to a configured destination infrastructure
+- Supports identification using either an Asset ID or an AAS ID
+- Can transfer associated Submodels and Concept Descriptions, depending on the configuration
 
-The forms for the individual Submodels are based on the corresponding IDTA Submodel Templates.
+<!-- ![AAS Importer](./images/modules/aas_importer.png) -->
 
-After completing the wizard, the Asset Administration Shell and the associated Submodels are created and the corresponding Submodel references are added to the AAS.
+**[Company Data Portal](modules/company_data_portal.md)**
 
-For detailed usage instructions, see the [AAS Creation Wizard](modules/aas_creation_wizard.md).
+- Provides a structured interface for managing company-related information
+- Includes sections for company identification, bank accounts, digital interfaces, business report figures, and company governance
+- Supports structured and multilingual information where applicable
 
----
+**[PCF Process](modules/pcf_process.md)**
 
-### AAS Importer
+- Provides a workflow for initiating Product Carbon Footprint related production processes
+- Allows users to search for and select available product types
+- Supports starting the corresponding production process for a selected product
 
-The **AAS Importer** provides a workflow for transferring an Asset Administration Shell from a source infrastructure to a configured destination infrastructure.
+**[Query Language](modules/query_language.md)**
 
-An AAS can be identified using either:
+- Provides a test interface for executing queries against AAS-related API components
+- Allows users to select an API component and enter queries in JSON format
+- Displays the corresponding query results directly in the Web UI
 
-- **Asset ID**
-- **AAS ID**
+**[DPP Demo](modules/dpp_demo.md)**
 
-The user can select the source infrastructure from which the AAS should be retrieved and the destination infrastructure to which it should be imported.
+- Demonstrates Digital Product Passport related functionality
+- Shows how DPP-specific use cases can be integrated as a module within the BaSyx AAS Web UI
 
-When importing an AAS, the module can retrieve and transfer:
+**[Module Routing Showcase](modules/module_routing_showcase.md)**
 
-- The Asset Administration Shell
-- Associated Submodels
-- Concept Descriptions, if configured
-
-![AAS Importer](./images/modules/aas_importer.png)
-
-Additional options are available for using AAS Superpath endpoints when retrieving or storing Submodels.
-
-```{note}
-The available source and destination infrastructures depend on the configuration of the BaSyx AAS Web UI.
-```
-
----
-
-### Company Data Portal
-
-The **Company Data Portal** provides a structured interface for entering and managing information related to a company.
-
-Company information is separated into different sections, including:
-
-- **Company Identification**
-- **Bank Accounts**
-- **Digital Interfaces**
-- **Business Report Figures**
-- **Company Governance**
-
-![Company Data Portal](./images/modules/company_data_portal.png)
-
-The individual sections provide forms for entering the corresponding company information.
-
-For example, the **Company Identification** section contains information such as:
-
-- Company name
-- Company logo
-- Company description
-- Homepage URL
-- VAT number
-- Tax number
-
-Where supported by the corresponding data structure, multilingual values can also be entered.
-
----
-
-### DPP Demo
-
-The **DPP Demo** demonstrates Digital Product Passport related functionality within the BaSyx AAS Web UI.
-
-It provides an example of how Digital Product Passport use cases can be integrated as an application-level module within the common Web UI.
-
-```{note}
-The DPP Demo is primarily intended for demonstration purposes. Its available functionality may depend on the corresponding Web UI configuration and demo environment.
-```
-![DPP Demo](./images/modules/dpp_demo.png)
----
-
-### Module Routing Showcase
-
-The **Module Routing Showcase** demonstrates how module-specific views and navigation can be integrated into the BaSyx AAS Web UI.
-
-It is primarily intended as a reference and demonstration module for module navigation and routing capabilities.
-
-```{note}
-This module is mainly intended for development and demonstration purposes rather than regular AAS management workflows.
-```
-
----
-### PCF Process
-
-The **PCF Process** module provides a workflow for initiating a Product Carbon Footprint (PCF) related production process.
-
-The available product types can be searched and selected from the product list. After selecting a product, the corresponding production process can be started using **Produce**.
-
-![PCF Process](./images/modules/pcf_process.png)
-
-```{note}
-The available products and functionality of the PCF Process module depend on the configured environment and the underlying AAS data.
-```
-
----
-
-### Query Language
-
-The **Query Language** module provides a test interface for executing queries against AAS-related API components.
-
-The user can:
-
-- Select the API component to query
-- Enter a query in JSON format
-- Execute the query directly from the Web UI
-- Inspect the returned query result
-
-The module can be used to test and interact with the available AAS query functionality without directly calling the corresponding API endpoints.
-
-![Query Language](./images/modules/query_language.png)
-
-```{note}
-The available API components and supported queries depend on the configured AAS infrastructure.
-```
----
+- Demonstrates module-specific routing and navigation
+- Serves primarily as a reference for developing and integrating custom modules
 
 ## Developing Custom Modules
 
