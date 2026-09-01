@@ -214,7 +214,15 @@ The available API components and supported queries depend on the configured AAS 
 ```
 ---
 
-## Detailed Module Documentation
+## Developing Custom Modules
+
+The BaSyx AAS Web UI can be extended with additional custom modules.
+
+Custom modules can provide their own application views, workflows, navigation, and integration with shared BaSyx Web UI functionality.
+
+For information about implementing a custom module, see the [Developing Custom Modules](../../../../developer_documentation/basyx_web_ui/developing_custom_modules.md) documentation.
+
+---
 
 Detailed user documentation is available for selected modules:
 
